@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="img/icons/avatar1.ico"/>
+    <!-- ...Подключение анимации ч/з  cdn . js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- ...............modal........... -->
+   
+
+   
+  
+</head>
+<body>
+    <header class="header">
+        <div class="logo header__logo" id="animate-area">
+            <a href="https://www.chevrolet.com/" class="logo__link" target="_blank">
+                <img class="logo__link-img animate__animated animate__zoomIn" src="img/logo/1019_Automotive-logo_Chevy-1.png" alt="">
+            </a>
+        </div>
+        <nav class="menu" id="animate-area">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link menu__list-link--active">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Новости</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Форум</a>
+                </li>
+                <li class="menu__list-item">
+                    <a href="#" class="menu__list-link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="slider">
+        <div class="slider__item" style="background-image: url('img/header/Camaro_ZL1_Gallery_1.jpg');"></div>
+        <div class="slider__item-start" style="background-image: url('img/header/Camaro_ZL1_Gallery_2.jpg');"></div>
+        <div class="slider__item-finish" style="background-image: url('img/header/Camaro_ZL1_Gallery_3.jpg');"></div>
+        <div class="slider__item-finish" style="background-image: url('img/header/Camaro_ZL1_Gallery_4.jpg');"></div>
+        <div class="slider__item-finish" style="background-image: url('img/header/Camaro_ZL1_Gallery_5.jpg');"></div>
+        <div class="slider__item-finish" style="background-image: url('img/header/Camaro_ZL1_Gallery_7.jpg');"></div>
+        <div class="slider__item-finish" style="background-image: url('img/header/Camaro_ZL1_Gallery_8.jpg');"></div>
+    </section>
+
+    <section class="search">
+        
+        <div class="search__inner">
+            <form class="search__form">
+                <label class="search__form-label">Поиск Сервиса</label>
+                <input class="search__form-input" type="text" placeholder="Введите город">
+                <button class="search__form-button" type="submit">Найти</button>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="popular">
+        <h2 class="popular__title">Обзор технических функций</h2>
+        <div class="container">
+            <div class="popular__cards">
+                <div class="popular__cards-card">
+                    <img class="card__foto" src="img/header/Camaro_ZL1_Gallery_6.jpg" alt="" width="280px">
+                    <span class="card__text">text <br> text</span>
+                    <a href="#" class="card__link" onclick="return false">info</a>
+                </div>
+                <div class="popular__cards-card">
+                    <img class="card__foto" src="img/cardfoto/Camaro_ZL1_Gallery_11.jpg" alt="" width="280px">
+                    <span class="card__text">Text text</span>
+                    <a href="#" class="card__link" onclick="return false">info</a>
+                </div>
+                <div class="popular__cards-card">
+                    <img class="card__foto" src="img/cardfoto/Camaro_ZL1_Gallery_10.jpg" alt="" width="280px">
+                    <span class="card__text">Text text</span>
+                    <a href="#ex1" class="card__link" onclick="return false" rel="modal:open">info</a>
+                    <!-- Modal HTML embedded directly into document -->
+                        <div id="ex1" class="modal">
+                            <!-- <p>Thanks for clicking. That felt good.</p> -->
+                            <!-- <a href="#" rel="modal:close">Close</a> -->
+                            <div class="modal__window">
+                                <div class="modal__window-div">
+                                    <img src="img/slider2/comaro3.jpg" width="230px" alt="" class="modal__window-foto">
+                                    <h3 class="modal__title">Название</h3>
+                                    <p class="modal__window-text">The Chevrolet Camaro features redesigned front and rear ends, as well as more visual differentiation between trim levels. All Camaros models have received new LED headlamps along with a remodeled hood (except for the ZL1). Also new for 2019 is a Turbo 1LE model packing the turbocharged 2.0-liter I-4 that makes 275 hp (202 Kw) and 400 Nm (295 lb-ft) of torque. The package also gets you a staggere..</p>
+                                </div>
+                                <div class="modal__window-diver"></div>
+                            </div>
+                        </div>
+  
+  <!-- Link to open the modal -->
+  <!-- <p><a href="#ex1" rel="modal:open">Open Modal</a></p> -->
+                </div>
+                <div class="popular__cards-card">
+                    <img class="card__foto" src="img/header/Camaro_ZL1_Gallery_9.jpg" alt="" width="280px">
+                    <span class="card__text">Text text</span>
+                    <a href="#" class="card__link" onclick="return false">info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+    <section class="info">
+        <div class="container">
+            <div class="info__brand">
+                <div class="info__brand-item">
+                    <h4 class="info__brand-title">Вступительный текст о модели и годе производства</h4>
+                    <p class="info__brand-text">Chevrolet Camaro — культовый американский спортивный автомобиль, pony car, выпускаюшийся подразделением Chevrolet корпорации General Motors. Автомобили первого поколения производились с августа 1966 по ноябрь 1969 года, всего было изготовлено немногим менее 700 тысяч штук.</p>
+                    <p class="info__brand-text">Camaro 1969 модельного года считается лучшим автомобилем за всю историю фирмы Chevrolet. Голосование проводилось среди почитателей марки на сайте фирмы и было приурочено к её столетию.</p>
+
+                    <a href="#" class="info__brand-link">video кнопка</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+</html>
